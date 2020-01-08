@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".AdminMainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,23 +16,33 @@
         android:textSize="@android:dimen/app_icon_size"/>
 
     <Button
-        android:id="@+id/btnAdmin"
-        android:onClick="btnAdminOnClick"
+        android:id="@+id/btnAdminSet"
+        android:onClick="btnAdminSetOnClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/admin"
+        android:text="@string/admin_set"
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/btnUser"
-        android:onClick="btnUserOnClick"
+        android:id="@+id/btnAppLockSet"
+        android:onClick="btnAppLockSetOnClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/user"
+        android:text="@string/app_lock_set"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btnAppLockOnOff"
+        android:onClick="btnAppLockOnOffOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/app_lock_onoff"
         android:textSize="20dp"/>
 
 </LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminSetActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="@android:dimen/app_icon_size"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:minLines="5"
+        android:textSize="20dp"
+        android:background="@drawable/edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_set_notice" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_phone_number"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/EditTextAdminPhoneNumber"
+            android:inputType="phone"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_use_password"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/EditTextAdminUsePassword"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:onClick="sendOnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>
