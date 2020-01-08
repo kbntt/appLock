@@ -28,8 +28,6 @@ public class AdminSetActivity extends AppCompatActivity {
             EditText adminPhoneNumber = findViewById(R.id.EditTextAdminPhoneNumber) ;
             EditText adminUsePassword = findViewById(R.id.EditTextAdminUsePassword) ;
             SmsManager sms = SmsManager.getDefault();
-            System.out.println("================>"+adminPhoneNumber.getText().toString());
-            System.out.println("================>"+adminUsePassword.getText().toString());
             sms.sendTextMessage(adminPhoneNumber.getText().toString(),null,adminUsePassword.getText().toString(),null,null);
             Toast.makeText(getApplicationContext(),"전송하였습니다",Toast.LENGTH_LONG).show();
         }catch (Exception e){
