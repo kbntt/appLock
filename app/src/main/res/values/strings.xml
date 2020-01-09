@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">appLock</string>
+    <string name="app_name">App Lock</string>
     <string name="main_title">App Lock</string>
     <string name="admin">관리자</string>
     <string name="admin_phone_number">관리자 전화번호</string>

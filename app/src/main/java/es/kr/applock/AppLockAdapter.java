@@ -22,6 +22,7 @@ public class AppLockAdapter extends ArrayAdapter {
     AppLockAdapter(Context context, int resource, ArrayList<AppLockItemVo> list) {
         super(context, resource, list);
         this.resourceId = resource;
+        this.items = list;
     }
 
     @Override
@@ -51,14 +52,31 @@ public class AppLockAdapter extends ArrayAdapter {
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(this.resourceId, parent, false);
         }
-        ImageView imgAppIcon = convertView.findViewById(R.id.imgAppIcon);
-        TextView appName = (TextView) convertView.findViewById(R.id.textViewAppName);
-        AppLockItemVo listViewItem = (AppLockItemVo) getItem(position);
+        final ImageView imgAppIcon = convertView.findViewById(R.id.imgAppIcon);
+        final TextView appName = convertView.findViewById(R.id.textViewAppName);
+        final ToggleButton togBtn = convertView.findViewById(R.id.togBtn);
+        final AppLockItemVo item = (AppLockItemVo) getItem(position);
 
         // 아이템 내 각 위젯에 데이터 반영
-        imgAppIcon.setImageDrawable(listViewItem.getIconDrawable());
-        appName.setText(listViewItem.getName());
+        imgAppIcon.setImageDrawable(item.getIconDrawable());
+        appName.setText(item.getName());
 
+        togBtn.setTag(position);
+        togBtn.setOnClickListener(new ToggleButton.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                if (togBtn.getText().equals("OFF")) {
+                    System.out.println("toggleButton Yes =>" + item.getName());
+                    togBtn.setText("OFF");
+
+                } else {
+                    System.out.println("toggleButton No" + item.getName());
+                    togBtn.setText("ON");
+                } // end if
+
+            } // end onClick()
+        });
         return convertView;
     }
 }
