@@ -23,6 +23,5 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnUserOnClick(View view) {
         Toast.makeText(getApplicationContext(),"btnUserOnClick",Toast.LENGTH_LONG).show();
-
     }
 }

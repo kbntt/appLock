@@ -1,16 +1,17 @@
 <resources>
     <string name="app_name">App Lock</string>
-    <string name="main_title">App Lock</string>
     <string name="admin">관리자</string>
     <string name="admin_phone_number">관리자 전화번호</string>
-    <string name="admin_use_password">사용할 비밀번호</string>
-    <string name="user">일반사용자</string>
     <string name="admin_set">관리자 설정</string>
+    <string name="admin_pass_word">관리자 비밀번호 설정</string>
+    <string name="app_lock_onoff">앱잠금 On,Off 설정</string>
     <string name="app_lock_set">앱잠금 설정</string>
-    <string name="app_lock_onoff">앱잠금 ON,OFF설정</string>
     <string name="send">전송</string>
-    <string name="admin_set_notice">일반사용자의 전화기에서 관리자전화\n
-        번호와 비밀번호를 설정합니다.\n
-        일반사용자 스마트폰에서 사용할 비밀번호를 \n
-        관리자 전화 번호로 전송됩니다.</string>
+    <string name="user">사용자</string>
+    <string name="admin_set_notice">
+        일반사용자의 전화기에서 관리자전화 번호와\n
+        비밀번호를 설정 합니다.\n
+        일반사용자 스마트폰에서 사용 할 비밀번호를\n
+        관리자 전화 번호로 전송합니다.
+    </string>
 </resources>

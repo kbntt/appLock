@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,41 +9,38 @@
     tools:context=".AdminMainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_title"
-        android:gravity="center"
-        android:textColor="@android:color/holo_blue_bright"
-        android:textSize="@android:dimen/app_icon_size"/>
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@android:dimen/app_icon_size"
+        />
 
     <Button
         android:id="@+id/btnAdminSet"
         android:onClick="btnAdminSetOnClick"
-        android:layout_width="match_parent"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:text="@string/admin_set"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btnAppLockSet"
         android:onClick="btnAppLockSetOnClick"
-        android:layout_width="match_parent"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:text="@string/app_lock_set"
-        android:textSize="20dp"/>
+        android:text="@string/app_lock_onoff"
+        android:textSize="20dp"
+        android:layout_gravity="center" />
 
     <Button
         android:id="@+id/btnAppLockOnOff"
         android:onClick="btnAppLockOnOffOnClick"
-        android:layout_width="match_parent"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:text="@string/app_lock_onoff"
-        android:textSize="20dp"/>
-
+        android:text="@string/app_lock_set"
+        android:textSize="20dp"
+        android:layout_gravity="center" />
 </LinearLayout>

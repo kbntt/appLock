@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="es.kr.applock">
-
     <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
@@ -11,8 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AppLockActivity"></activity>
-        <activity android:name=".AdminSetActivity" />
+        <activity android:name=".AdminSetActivity"></activity>
         <activity android:name=".AdminMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

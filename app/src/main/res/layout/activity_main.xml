@@ -7,32 +7,31 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_title"
-        android:gravity="center"
-        android:textColor="@android:color/holo_blue_bright"
-        android:textSize="@android:dimen/app_icon_size"/>
+        android:text="@string/app_name"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@android:dimen/app_icon_size"
+        />
 
     <Button
         android:id="@+id/btnAdmin"
         android:onClick="btnAdminOnClick"
-        android:layout_width="match_parent"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:text="@string/admin"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
 
     <Button
         android:id="@+id/btnUser"
         android:onClick="btnUserOnClick"
-        android:layout_width="match_parent"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:text="@string/user"
-        android:textSize="20dp"/>
-
+        android:textSize="20dp"
+        android:layout_gravity="center" />
 </LinearLayout>
