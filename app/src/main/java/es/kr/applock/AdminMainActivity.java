@@ -24,6 +24,8 @@ public class AdminMainActivity extends AppCompatActivity {
 
     public void btnAppLockSetOnClick(View view) {
         Toast.makeText(getApplicationContext(),"btnAppLockSetOnClick",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(getApplicationContext(),AppLockActivity.class);
+        startActivityForResult(intent,100);
     }
 
     public void btnAppLockOnOffOnClick(View view) {
