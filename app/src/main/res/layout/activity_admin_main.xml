@@ -36,11 +36,12 @@
         android:layout_gravity="center" />
 
     <Button
-        android:id="@+id/btnAppLockOnOff"
-        android:onClick="btnAppLockOnOffOnClick"
+        android:id="@+id/btnDB"
+        android:onClick="btnDBOnClick"
         android:layout_width="339dp"
         android:layout_height="wrap_content"
-        android:text="@string/app_lock_set"
+        android:text="@string/database_test"
         android:textSize="20dp"
         android:layout_gravity="center" />
+
 </LinearLayout>

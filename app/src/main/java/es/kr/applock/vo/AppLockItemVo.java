@@ -1,14 +1,21 @@
 package es.kr.applock.vo;
 
 import android.graphics.drawable.Drawable;
-import android.widget.Button;
-import android.widget.ToggleButton;
+import android.widget.Switch;
 
 public class AppLockItemVo {
     private Drawable icon;
     private String appName;
     private String packageName;
-    private ToggleButton togBtn;
+    private Switch switchBtn;
+
+    public Switch getSwitchBtn() {
+        return switchBtn;
+    }
+
+    public void setSwitchBtn(Switch switchBtn) {
+        this.switchBtn = switchBtn;
+    }
 
     public Drawable getIcon() {
         return icon;
@@ -34,12 +41,5 @@ public class AppLockItemVo {
         this.packageName = packageName;
     }
 
-    public Button getTogBtn() {
-        return togBtn;
-    }
-
-    public void setTogBtn(ToggleButton togBtn) {
-        this.togBtn = togBtn;
-    }
 
 }

@@ -28,7 +28,9 @@ public class AdminMainActivity extends AppCompatActivity {
         startActivityForResult(intent,100);
     }
 
-    public void btnAppLockOnOffOnClick(View view) {
-        Toast.makeText(getApplicationContext(),"btnAppLockOnOffOnClick",Toast.LENGTH_LONG).show();
+    public void btnDBOnClick(View view) {
+        Toast.makeText(getApplicationContext(),"btnDBOnClick",Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(getApplicationContext(),DataBaseTestActivity.class);
+        startActivityForResult(intent,100);
     }
 }

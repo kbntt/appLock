@@ -1,11 +1,11 @@
 package es.kr.applock.adapter;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -23,18 +23,18 @@ public class AppLockAdaper extends RecyclerView.Adapter<AppLockAdaper.AppLockVie
     public class AppLockViewHolder extends RecyclerView.ViewHolder{
         protected ImageView imagAppIcon;
         protected TextView appName;
-        protected ToggleButton togBtn;
+        protected Switch switchBtn;
         public AppLockViewHolder(View view){
             super(view);
             this.imagAppIcon = view.findViewById(R.id.imgAppIcon);
             this.appName = view.findViewById(R.id.txtViewAppName);
-            this.togBtn = view.findViewById(R.id.tgBtnLockOnOff);
+            this.switchBtn = view.findViewById(R.id.switchBtn);
         }
     }
 
     public AppLockAdaper(int resource, ArrayList<AppLockItemVo> list){
         this.resource = resource;
-        this.voList = list;
+        this. voList = list;
     }
 
     @NonNull
@@ -50,6 +50,17 @@ public class AppLockAdaper extends RecyclerView.Adapter<AppLockAdaper.AppLockVie
         AppLockItemVo vo = voList.get(position);
         holder.appName.setText(vo.getAppName());
         holder.imagAppIcon.setImageDrawable(vo.getIcon());
+        holder.switchBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                    if(isChecked){
+                        System.out.println("onCheckedChanged true" );
+                    }else{
+                        System.out.println("onCheckedChanged false" );
+                    }
+                }
+            }
+        );
     }
 
     @Override

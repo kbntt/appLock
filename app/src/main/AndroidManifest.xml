@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AppLockActivity"></activity>
+        <activity android:name=".DataBaseTestActivity"></activity>
+        <activity android:name=".AppLockActivity" />
         <activity android:name=".AdminSetActivity" />
         <activity android:name=".AdminMainActivity" />
         <activity android:name=".MainActivity">

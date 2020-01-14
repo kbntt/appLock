@@ -10,23 +10,26 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Switch;
 import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class AppLockActivity extends AppCompatActivity {
-    private ToggleButton togBtn ;
+
     private AppLockAdaper adaper;
+    private Switch switchBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_lock);
         RecyclerView recyclerView = findViewById(R.id.appListView);
-        togBtn = findViewById(R.id.tgBtnLockOnOff);
+        switchBtn = findViewById(R.id.switchBtn);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         ArrayList<AppLockItemVo> appLockList = loadItems();
